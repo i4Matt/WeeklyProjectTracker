@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  weekly-project-tracker:
+    build:
+      context: . # Use the Dockerfile in the current directory
+    ports:
+      - "9090:9090" # Map port 9090 on the host to port 9090 in the container
+    volumes:
+      - .:/app # Mount the current directory to /app in the container
+      - /app/node_modules # Avoid conflicts with node_modules
+    working_dir: /app
+    command: ["node", "server/app.js"] # Command to run your app

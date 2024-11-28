@@ -1,0 +1,19 @@
+{
+  "name": "WeeklyProjectTracker",
+  "version": "0.1.0",
+  "description": "To give me a random project every week.",
+  "main": "server/app.js",
+  "scripts": {
+    "start": "node Server/app.js",
+    "devStart": "nodemon Server/app.js"
+  },
+  "author": "Matthew H.",
+  "license": "None",
+  "dependencies": {
+    "express": "^4.21.1",
+    "node-schedule": "^2.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
